@@ -1,0 +1,232 @@
+* {
+    box-sizing: border-box;
+  }
+
+$secondary: #1b62b3;
+$third:#7eb8fa;
+$primary:  rgb(42, 46, 40);
+$border: #666;
+$white: #fff;
+
+.back {
+    padding: 0;
+    margin: 0;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("https://greensboro.org/wp-content/themes/chamber2017/img/downtown-greensboro-sunrise-1200x800.jpg");
+    background-attachment: fixed;
+  }
+
+header {
+    background-color: $primary;
+    // font-family: Georgia, Times, Times New Roman, serif;
+    height: 60px;
+    border-bottom: 2px solid $border;
+}
+
+.logo {
+    background-color: $secondary;
+    color: $primary;
+    font-size: 24px;
+    // font-weight: bold;
+    text-align: center;
+    padding: 15.5px;
+    position: relative;
+    top: 11px;
+    border-left: 2px $white solid;
+    border-right: 2px $white solid;
+}
+
+.logo a {
+    color: $white;
+    height: 60px;
+}
+.logo:hover {
+  color: $white;
+  text-decoration: none;
+}
+
+.email {
+    color: $primary;
+}
+.email:hover {
+    color: $secondary;
+    text-decoration: none;
+}
+nav {
+    float: right;
+    font-size: 16px;
+    padding-top: 20px;
+    
+    background: $primary;
+
+}
+
+nav a {
+    color: $white;
+    border-right: 1px solid $border;
+    padding: 1px 10px;
+  }
+  nav a:hover {
+    text-decoration: none;
+    color:  $secondary;
+    
+  }
+  nav a:last-child {
+    border-right: none;
+  }
+
+  .main-container {
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.459);
+    box-shadow: 
+      5px 0px 10px rgba(255, 255, 255, 0.3),
+      -5px 0px 10px rgba(255, 255, 255, 0.3),
+      0px 5px 10px rgba(255, 255, 255, 0.3),
+      0px -5px 10px rgba(255, 255, 255, 0.3);
+    height: calc(100vh - 200px);
+    overflow: auto;
+    position: relative;
+    top: 25px;
+    font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+  }
+  .main-container h5 {
+    margin-top: 2%;
+  }
+
+  
+  .main-container h1 {
+    font-size: 36px;
+    color:  rgb(42, 46, 40);
+    text-shadow: 1px 1px 10px white;
+    padding: 10px 0;
+    border-bottom: 2px solid $border;
+  }
+  
+  .main-container span {
+      font-size: 24px;
+  }
+  
+ 
+  
+  .main-container p {
+    color: rgb(0, 0, 0);
+    line-height: 24px;
+    font-size: 18px;
+  }
+  
+  .banner {
+    position: relative;
+    /* border: red 1px solid; */
+    width: 100%;
+    height: 50%;
+    margin-bottom: 3%;
+    
+   
+  }
+ 
+  .portImg {
+    margin-bottom: 10px;
+    width: 100%;
+    // filter: grayscale(70%);
+  }
+
+  .text-block {
+   position: absolute;
+   bottom: 15%;
+   background-color: $secondary;
+   color: white;
+   padding: 1em;
+   /* border: orange 1px solid; */
+   width: 100%;
+   text-align: center;
+  }
+  
+  .form-control {
+    background-color: rgba(42, 46, 40, 0.25);
+    border: none;
+    border-radius: 0px;
+  }
+  
+  .form-control::placeholder {
+    color: rgb(42, 46, 40, .75);
+  }
+  .form-control:focus {
+    box-shadow: 0 0 5px $secondary;
+    padding: 3px 0px 3px 3px;
+    margin: 5px 1px 3px 0px;
+    border: 1px solid $secondary;
+    background-color: rgba(42, 46, 40, 0.25);
+  }
+
+
+  
+  .right {
+    float: left;
+  }
+
+  .left {
+    float: left;
+  }
+
+  .icon {
+    font-size: 30px !important;
+    color: $secondary;
+    transition: color .5s !important;
+  }
+  .links {
+      color: $secondary
+  }
+  .icon1 {
+    
+    font-size: 45px !important;
+    color: $secondary;
+    
+  }
+
+  .icon:hover, .links:hover {
+      color: $white;
+  }
+  @media screen and (max-width: 1300px) {
+    body {
+      background-size: 1300px;
+    }
+  } 
+  @media screen and (max-width: 575px) {
+    .main-container {
+      height: calc(100vh - 300px);
+    }
+    body {
+      background-size: 1350px;
+    }
+  } 
+  @media screen and (max-width: 768px) {
+    .mobile {
+          width: 100%;
+          text-align: center;
+          float: none;
+          height: 60px;
+          background-color: $secondary;
+      }
+    nav {
+          width: 100%;
+          text-align: center;
+          float: none;
+          padding: 10px 2px;
+        }
+    .bar {
+        background-color: $primary;
+    }
+    .main-container {
+        position: relative;
+        top: 60px;
+    }
+    .main-container img {
+        margin-right: 5%;
+      }
+    .logo {
+      border: none;
+    }  
+ 
+  }

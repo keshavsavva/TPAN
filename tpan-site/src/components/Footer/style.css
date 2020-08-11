@@ -1,0 +1,9 @@
+.footerIcon:hover {
+    color :#fff;
+}
+
+.footerIcon {
+    color: rgb(42, 46, 40);
+    font-size: 35px !important;
+    transition: color .3s !important;
+}

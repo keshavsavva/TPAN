@@ -1,0 +1,39 @@
+#home {
+    height: 100vh; 
+}
+
+#about {
+    background-color: #fff;
+}
+#experience {
+    background-color: rgb(219, 219, 219);
+}
+#portfolio {
+    background-color: #fff;
+}
+#contact {
+    background-color: #fff;
+}
+
+#footer {
+    background-color: #7eb8fa;
+}
+
+.homeInfo {
+    position: relative;
+    top: 45%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.459);
+    box-shadow: 
+      5px 0px 10px rgba(255, 255, 255, 0.3),
+      -5px 0px 10px rgba(255, 255, 255, 0.3),
+      0px 5px 10px rgba(255, 255, 255, 0.3),
+      0px -5px 10px rgba(255, 255, 255, 0.3);
+}
+
+.greenText {
+    color: #1b62b3;
+}
+
+
+
